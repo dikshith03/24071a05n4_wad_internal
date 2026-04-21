@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather MVP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>Weather Graph</h1>
+
+        <div class="controls">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Get Weather</button>
+        </div>
+
+        <div id="error-message" class="error hidden"></div>
+
+        <div id="weatherCard" class="hidden">
+            <h2 id="cityName"></h2>
+            <div><span id="currentTemp"></span>°C</div>
+            <div id="weatherDesc"></div>
+
+            <div class="chart-wrapper">
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
